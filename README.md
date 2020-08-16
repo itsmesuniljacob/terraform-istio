@@ -39,6 +39,7 @@ While installation of Istio was smooth using the above method. There were some c
     `
     Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "validation.istio.io": Post https://istiod.istio-system.svc:443/validate?timeout=30s
     `
+    
     This issue can also to be a problem of webhook validation. For webhook works, firewall rule needs setting to port 15017,instead of 9443. More details can be found [here][2].
 
     This [link][3] has instructions for amending the firewall for private gke clusters.
