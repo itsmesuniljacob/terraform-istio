@@ -12,5 +12,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Super-Linter
       uses: docker://wata727/tflint:0.29.0
+    run: |
+      mkdir /github/home/.terrascan
     - name: terrascan
       uses: docker://accurics/terrascan
