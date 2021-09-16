@@ -1,0 +1,14 @@
+name: 'Terraform'
+
+on:
+  push:
+  
+jobs:  
+  terraform_lint:
+    runs-on: ubuntu-latest
+    name: terralint-action
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Super-Linter
+      uses: docker://wata727/tflint:0.29.0
