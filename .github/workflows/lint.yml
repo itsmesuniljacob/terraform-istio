@@ -15,4 +15,4 @@ jobs:
     - name: terrascan
       uses: docker://accurics/terrascan init
     - name: terrascan
-      uses: docker://accurics/terrascan scan      
+      uses: xylene314/tflint-actions@v0.1.1     
