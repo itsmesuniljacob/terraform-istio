@@ -13,6 +13,4 @@ jobs:
     - name: Super-Linter
       uses: docker://wata727/tflint:0.29.0
     - name: terrascan
-      uses: docker://accurics/terrascan init
-    - name: terrascan
       uses: xylene314/tflint-actions@v0.1.1     
